@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll a card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #cardDisplay {
+            font-size: 2em;
+            margin: 20px;
+        }
+        #cardImage {
+            margin: 20px auto; /* Ajout de 'auto' pour les marges gauche et droite */
+            max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROLL A CARD</h1>
+    <div id="cardDisplay">Cliquez sur le bouton pour tirer une carte</div>
+    <img id="cardImage" src="" alt="Carte" style="display: none;">
+    <div id="cardsRemaining">Cartes restantes : 107</div>
+    <button onclick="drawCard()">Tirer une carte</button>
+    <button onclick="resetGame()">Réinitialiser le jeu</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
